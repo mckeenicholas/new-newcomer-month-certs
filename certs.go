@@ -35,7 +35,7 @@ func generate(names []string, inputPath string, outputPath string) {
 	}
 
 	// These are flipped since we are using landscape mode
-	width, height := gopdf.PageSizeLetter.H, gopdf.PageSizeLetter.W
+	width, height := PageSizeLetterLandscape.W, PageSizeLetterLandscape.H
 
 	for _, name := range names {
 		pdf.AddPage()
